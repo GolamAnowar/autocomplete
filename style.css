@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    /* transition: all .5s linear; */
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background : #4074ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.wrapper .search-box{
+    border: .1rem solid #d1d1d1;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.wrapper .search-box input{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+}
+.wrapper .search-box i{
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1.5rem;
+}
+.wrapper .autocom-box li{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    border-bottom: .1rem solid #d1d1d1;
+}
+.wrapper .autocom-box li{
+    display: none;
+}
+.wrapper.active .autocom-box li{
+    display: block;
+}
